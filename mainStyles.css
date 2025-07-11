@@ -198,3 +198,208 @@ body {
   line-height: 20px;
   font-family: "Lato", sans-serif;
 }
+
+/* Journey section */
+.journeySection {
+  background-color: #f4f4f5;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.journey-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4e5461;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 12px;
+}
+
+.journey-text {
+  font-weight: 400;
+  font-size: 12px;
+  color: #4e5461;
+  line-height: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+/* footer */
+
+.footer {
+  background: #1a202c;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-content {
+  background-color: #222939;
+  padding: 16px;
+}
+.welcome-bonus {
+  background-color: #383e4d;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.welcome-bonus:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.welcome-bonus label {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+
+.dropdown-arrow {
+  color: #bdc3c7;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.welcome-bonus:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.separator {
+  height: 1px;
+  margin: 8px 0 20px;
+  background-color: #4e5461;
+}
+
+.laliga-section {
+  margin-bottom: 40px;
+}
+
+.partner-title {
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.partner-years {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.team-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 24px;
+}
+
+.team-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.7;
+  gap: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.team-logo:hover {
+  opacity: 1;
+}
+
+.team-shield {
+  width: 50px;
+  height: 60px;
+  background-color: #7f8c8d;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.team-years {
+  color: #95a5a6;
+  font-size: 12px;
+}
+
+.responsible-gambling {
+  margin-top: 24px;
+}
+
+.responsible-gambling p {
+  color: #90949c;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.responsible-gambling a {
+  color: #90949c;
+  text-decoration: underline;
+}
+
+.certification-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.lorem-logo {
+  color: #7f8c8d;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-text {
+  color: #95a5a6;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  color: #95a5a6;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-links a {
+  color: #95a5a6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-bottom {
+  padding: 16px;
+}
