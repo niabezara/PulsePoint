@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Lato", sans-serif;
   background-color: #222939;
@@ -13,12 +15,22 @@ body {
 .header {
   position: absolute;
   top: 0;
-
   z-index: 1000;
   padding: 16px;
-  img {
-    width: 154px;
-  }
+  transition: transform 0.3s ease;
+}
+
+.header:hover {
+  transform: translateY(-2px);
+}
+
+.header img {
+  width: 154px;
+  transition: filter 0.3s ease;
+}
+
+.header img:hover {
+  filter: brightness(1.1) drop-shadow(0 4px 8px rgba(202, 171, 114, 0.3));
 }
 .landingPage {
   display: flex;
@@ -147,12 +159,48 @@ body {
 .claim-button {
   border: none;
   border-radius: 60px;
-  background-color: #caab72;
+  background: linear-gradient(135deg, #caab72, #e6c688);
   width: 200px;
   height: 48px;
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(202, 171, 114, 0.3);
+}
+
+.claim-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.claim-button:hover:before {
+  left: 100%;
+}
+
+.claim-button:hover {
+  background: linear-gradient(135deg, #e6c688, #caab72);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(202, 171, 114, 0.5);
+}
+
+.claim-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(202, 171, 114, 0.3);
 }
 .terms-conditions {
   font-family: "Lato", sans-serif;
@@ -162,6 +210,27 @@ body {
   margin-top: 25px;
   line-height: 14px;
   text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.terms-conditions:hover {
+  color: #caab72;
+}
+
+.terms-conditions:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #caab72;
+  transition: width 0.3s ease;
+}
+
+.terms-conditions:hover:after {
+  width: 100%;
 }
 .landing-subheading {
   font-family: "Lato", sans-serif;
@@ -206,12 +275,30 @@ body {
   gap: 24px;
   margin-top: 17px;
 }
+
 .featurediv {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 8px;
+  transition: all 0.3s ease;
+
+  cursor: pointer;
+}
+
+.featurediv:hover {
+  transform: translateY(-8px);
+  /* background-color: #f8f9fa;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); */
+}
+
+.featurediv:hover .feature-title {
+  color: #caab72;
+}
+
+.featurediv:hover .feature-text {
+  color: #333;
 }
 .feature-title {
   font-weight: 700;
@@ -619,6 +706,7 @@ body {
   .destination-card {
     position: relative;
   }
+
   .go-now {
     display: flex;
     padding: 16px 32px;
@@ -633,7 +721,45 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    cursor: pointer;
+    /* position: relative; */
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(202, 171, 114, 0.3);
   }
+
+  .go-now:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .go-now:hover:before {
+    left: 100%;
+  }
+
+  .go-now:hover {
+    background: linear-gradient(135deg, #e6c688, #caab72);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(202, 171, 114, 0.6);
+    color: #1a202c;
+  }
+
+  .go-now:active {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 15px rgba(202, 171, 114, 0.3);
+  }
+
   .why-choose-us {
     padding: 32px 16px 72px;
   }
