@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="mainStyles.css" />
   </head>
   <body>
-    <header class="header">
-      <img src="./assets/logo.png" alt="" />
+    <header class="header" role="banner">
+      <img src="./assets/logo.png" alt="Sportsbook Logo" />
     </header>
     <main class="landingPage">
       <div class="landingContainer">
         <img class="landingImg" src="./assets/landingbg.png" alt="" />
+        <img
+          class="landingImgResponsive"
+          src="./assets/mainbgdesktop.png"
+          alt=""
+        />
       </div>
       <!-- landing text goes here -->
       <div class="maintextContainer">
-        <h4 class="landing-heading">celebrate SPORTSBOOK <br />300% bonus</h4>
+        <h4 class="landing-heading">celebrate SPORTSBOOK 300% bonus</h4>
         <h6 class="landing-subheading">
           Welcome to World Cup <br />
           get special bonus of 300%<br />
@@ -32,58 +37,98 @@
       </div>
       <!-- join deposit play -->
       <div class="join-deposit-play">
-        <div class="join">
-          <img src="./assets/human.png" alt="" />
-          <span>Join us</span>
-          <p>It’s quick and easy</p>
-        </div>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_1_6805)">
-            <path
-              d="M13.3575 10.0365C13.0258 9.71801 12.4899 9.71801 12.1582 10.0365L8.84942 13.2051L8.84942 0.816639C8.84942 0.367488 8.46666 0 7.99884 0C7.53102 0 7.14826 0.367488 7.14826 0.816639L7.14826 13.2132L3.84801 10.0447C3.51629 9.72617 2.98042 9.72617 2.6487 10.0447C2.31697 10.3631 2.31697 10.8776 2.6487 11.1961L7.40343 15.7611C7.73516 16.0796 8.27102 16.0796 8.60275 15.7611L13.3575 11.1961C13.6807 10.8776 13.6807 10.355 13.3575 10.0365Z"
-              fill="#90949C"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_1_6805">
-              <rect width="16" height="16" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-        <div class="join">
-          <img src="./assets/card.png" alt="" />
-          <span>Deposit</span>
-          <p>Secure with 2-5min deposit time!</p>
-        </div>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_1_6805)">
-            <path
-              d="M13.3575 10.0365C13.0258 9.71801 12.4899 9.71801 12.1582 10.0365L8.84942 13.2051L8.84942 0.816639C8.84942 0.367488 8.46666 0 7.99884 0C7.53102 0 7.14826 0.367488 7.14826 0.816639L7.14826 13.2132L3.84801 10.0447C3.51629 9.72617 2.98042 9.72617 2.6487 10.0447C2.31697 10.3631 2.31697 10.8776 2.6487 11.1961L7.40343 15.7611C7.73516 16.0796 8.27102 16.0796 8.60275 15.7611L13.3575 11.1961C13.6807 10.8776 13.6807 10.355 13.3575 10.0365Z"
-              fill="#90949C"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_1_6805">
-              <rect width="16" height="16" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-        <div class="join">
-          <img src="./assets/play.png" alt="" />
-          <span>Play</span>
-          <p>Start your winning journey!</p>
+        <div class="join-subdiv">
+          <div class="join">
+            <img src="./assets/human.png" alt="" />
+            <div>
+              <span class="join-text">Join us</span>
+              <p class="join-p">It’s quick and easy</p>
+            </div>
+          </div>
+          <div class="flip-container">
+            <svg
+              class="flip-iconmobile"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_6805)">
+                <path
+                  d="M13.3575 10.0365C13.0258 9.71801 12.4899 9.71801 12.1582 10.0365L8.84942 13.2051L8.84942 0.816639C8.84942 0.367488 8.46666 0 7.99884 0C7.53102 0 7.14826 0.367488 7.14826 0.816639L7.14826 13.2132L3.84801 10.0447C3.51629 9.72617 2.98042 9.72617 2.6487 10.0447C2.31697 10.3631 2.31697 10.8776 2.6487 11.1961L7.40343 15.7611C7.73516 16.0796 8.27102 16.0796 8.60275 15.7611L13.3575 11.1961C13.6807 10.8776 13.6807 10.355 13.3575 10.0365Z"
+                  fill="#90949C"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_6805">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              class="flip-icondesktop"
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.0547 0.973235C14.577 1.47092 14.577 2.27487 15.0547 2.77255L19.8076 7.72386L1.22496 7.72386C0.551233 7.72386 1.34599e-06 8.29811 1.4687e-06 8.99998C1.59142e-06 9.70184 0.551233 10.2761 1.22496 10.2761L19.8198 10.2761L15.067 15.2274C14.5893 15.7251 14.5893 16.529 15.067 17.0267C15.5447 17.5244 16.3165 17.5244 16.7942 17.0267L23.6417 9.89325C24.1194 9.39557 24.1194 8.59162 23.6417 8.09393L16.7819 0.973235C16.3164 0.475552 15.5325 0.475552 15.0547 0.973235Z"
+                fill="#90949C"
+              />
+            </svg>
+          </div>
+          <div class="join">
+            <img src="./assets/card.png" alt="" />
+            <div>
+              <span class="join-text">Deposit</span>
+              <p class="join-p">Secure with 2-5min deposit time!</p>
+            </div>
+          </div>
+          <div class="flip-container">
+            <svg
+              class="flip-iconmobile"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_6805)">
+                <path
+                  d="M13.3575 10.0365C13.0258 9.71801 12.4899 9.71801 12.1582 10.0365L8.84942 13.2051L8.84942 0.816639C8.84942 0.367488 8.46666 0 7.99884 0C7.53102 0 7.14826 0.367488 7.14826 0.816639L7.14826 13.2132L3.84801 10.0447C3.51629 9.72617 2.98042 9.72617 2.6487 10.0447C2.31697 10.3631 2.31697 10.8776 2.6487 11.1961L7.40343 15.7611C7.73516 16.0796 8.27102 16.0796 8.60275 15.7611L13.3575 11.1961C13.6807 10.8776 13.6807 10.355 13.3575 10.0365Z"
+                  fill="#90949C"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_6805">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              class="flip-icondesktop"
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.0547 0.973235C14.577 1.47092 14.577 2.27487 15.0547 2.77255L19.8076 7.72386L1.22496 7.72386C0.551233 7.72386 1.34599e-06 8.29811 1.4687e-06 8.99998C1.59142e-06 9.70184 0.551233 10.2761 1.22496 10.2761L19.8198 10.2761L15.067 15.2274C14.5893 15.7251 14.5893 16.529 15.067 17.0267C15.5447 17.5244 16.3165 17.5244 16.7942 17.0267L23.6417 9.89325C24.1194 9.39557 24.1194 8.59162 23.6417 8.09393L16.7819 0.973235C16.3164 0.475552 15.5325 0.475552 15.0547 0.973235Z"
+                fill="#90949C"
+              />
+            </svg>
+          </div>
+          <div class="join">
+            <img src="./assets/play.png" alt="" />
+            <div>
+              <span class="join-text">Play</span>
+              <p class="join-p">Start your winning journey!</p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- game destination -->
@@ -91,10 +136,22 @@
         <h6 class="Title">Your gaming destination</h6>
         <hr class="Divider" />
         <div class="destination-cards">
-          <img src="./assets/CARD-Sports 1.png" alt="" />
-          <img src="./assets/CARD-Sports 2.png" alt="" />
-          <img src="./assets/CARD-Sports 3.png" alt="" />
-          <img src="./assets/CARD-Sports 4.png" alt="" />
+          <div class="destination-card">
+            <img src="./assets/CARD-Sports 1.png" alt="" />
+            <button class="go-now">go now</button>
+          </div>
+          <div class="destination-card">
+            <img src="./assets/CARD-Sports 2.png" alt="" />
+            <button class="go-now">go now</button>
+          </div>
+          <div class="destination-card">
+            <img src="./assets/CARD-Sports 3.png" alt="" />
+            <button class="go-now">go now</button>
+          </div>
+          <div class="destination-card">
+            <img src="./assets/CARD-Sports 4.png" alt="" />
+            <button class="go-now">go now</button>
+          </div>
         </div>
       </div>
       <!-- why choose us -->
@@ -201,45 +258,54 @@
         </form>
 
         <div class="separator"></div>
-        <div class="laliga-section">
-          <img class="laliga-logo" src="./assets/Partners.png" alt="" />
-          <h3 class="partner-title">Official Regional Partner</h3>
-          <div class="partner-years">2020 - 2024</div>
-        </div>
+        <div class="footer-subcontent">
+          <div class="laliga-section">
+            <img class="laliga-logo" src="./assets/Partners.png" alt="" />
+            <h3 class="partner-title">Official Regional Partner</h3>
+            <div class="partner-years">2020 - 2024</div>
+          </div>
 
-        <div class="team-logos">
-          <div class="team-logo">
-            <img src="./assets/Vector.png" alt="" />
-            <div class="team-years">2016 - 2020</div>
-          </div>
-          <div class="team-logo">
-            <img src="./assets/Group 453.png" alt="" />
-            <div class="team-years">2015 - 2017</div>
-          </div>
-          <div class="team-logo">
-            <img src="./assets/Group 451.png" alt="" />
-            <div class="team-years">2011 - 2012</div>
-          </div>
-          <div class="team-logo">
-            <img src="./assets/Group 449.png" alt="" />
-            <div class="team-years">2006 - 2010</div>
+          <div class="team-logos">
+            <div class="team-logo">
+              <img src="./assets/Vector.png" alt="" />
+              <p class="team-name">AFC Bournemouth</p>
+              <div class="team-years">2016 - 2020</div>
+            </div>
+            <div class="team-logo">
+              <img src="./assets/Group 453.png" alt="" />
+              <p class="team-name">Crystal Palace</p>
+              <div class="team-years">2015 - 2017</div>
+            </div>
+            <div class="team-logo">
+              <img src="./assets/Group 451.png" alt="" />
+              <p class="team-name">Manchester City</p>
+              <div class="team-years">2011 - 2012</div>
+            </div>
+            <div class="team-logo">
+              <img src="./assets/Group 449.png" alt="" />
+              <p class="team-name">Tottenham Hotspur</p>
+              <div class="team-years">2006 - 2010</div>
+            </div>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="responsible-gambling">
-          <p>
-            We are committed to supporting <a href="#">Responsible Gambling</a>
-          </p>
-        </div>
+        <div class="footer-bottom-content">
+          <div class="responsible-gambling">
+            <p>
+              We are committed to supporting
+              <a href="#">Responsible Gambling</a>
+            </p>
+          </div>
 
-        <div class="certification-logos">
-          <img src="./assets/Group.png" alt="" />
-          <img src="./assets/GA.png" alt="" />
-          <img src="./assets/iTechLabs.png" alt="" />
-          <img src="./assets/Union.png" alt="" />
+          <div class="certification-logos">
+            <img src="./assets/Group.png" alt="" />
+            <img src="./assets/GA.png" alt="" />
+            <img src="./assets/iTechLabs.png" alt="" />
+            <img src="./assets/Union.png" alt="" />
 
-          <div class="lorem-logo">LoremLogo.com 2025</div>
+            <div class="lorem-logo">LoremLogo.com 2025</div>
+          </div>
         </div>
 
         <div class="footer-text">
